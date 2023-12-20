@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../src/assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../src/assets/css/style.css">
+  <title>Success</title>
+  
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 97vh;
+    }
+
+    .container {
+      background-color: var(--background-primary);
+      display: flex;
+      flex-direction: column;
+      height: 30vh;
+      width: 36vw;
+    }
+
+    h4 {
+      margin: 0px auto;
+      color: #D8DEE9;
+      font-size: 100%;
+      font-size: .6em;
+    }
+
+    .btn {
+      font-size: .8em;
+      margin: auto;
+      margin-top: auto;
+      padding-bottom: 5px;
+      background-color: var(--background-primary);
+      letter-spacing: 0.08em;
+      transition: .5s;
+      border-radius: 0px;
+      position: relative;
+    }
+
+    .btn:hover {
+      background-color: transparent;
+      outline: none;
+      transition: .5s;
+    }
+
+    .btn:hover .space::after{
+      content: "  ";
+    }
+
+    .btn::before {
+      content: "";
+      width: 20%;
+      height: 4px;
+      background-color: #D8DEE9;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      margin-left: 64%;
+      transition: .6s ease-in-out;
+    }
+
+    .btn:hover::before {
+      width: 13%;
+      margin-left: 58%;
+      margin-bottom: 14%;
+      transform: scaleX(-2);
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container success">
+    <h4 class="title">Cadastrado ou Login efetuado com Sucesso!</h2>
+      <button class="btn acessar_login" href="login.html"><span class="space">Log</span>n</button>
+  </section>
+
+  
+  <script>
+    const button = document.querySelector('.acessar_login')
+
+    button.addEventListener('click', e => {
+      window.location.href = 'login.html'
+    })
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../src/assets/fontawesome/css/all.css">
+  <title>Sign Up</title>
+
+  <style>
+    .generate_password{
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Sign up</h1>
+
+    <form action="/" method="POST" class='formulario cadastro'>
+
+      <div>
+        <label for="iemail">Email: </label>
+        <input type="email" class="email validar" required='required' id="iemail">
+        <div class="alerts"></div>
+      </div>
+      
+      <div>
+        <label for="Name">Full Name: </label>
+        <input type="text" class="sobrenome validar" id="iname">
+        <div class="alerts"></div>
+      </div>
+      
+      <div>
+        <label for="icpf">CPF: </label>
+        <input type="text" class="cpf validar" id="icpf" required="required">
+        <div class="alerts"></div>
+      </div>
+      
+      <div>
+        <label for="iusername">Username: </label>
+        <input type="text" class="usuario validar" id="iusername">
+        <div class="alerts"></div>
+      </div>
+      
+      <div>
+        <label for="ipassword">Password: </label>
+        <input type="password" class="senha validar" required='required' id="ipassword"> 
+        <span class="icon_eye"><i class="fa-solid fa-eye-slash icon"></i></span>
+        <div class="alerts"></div>
+      </div>
+      
+      <div>
+        <label for="ipasswordC">Confirm Password: </label>
+        <input type="password" class="repetir_senha validar" required='required' id="ipasswordC">
+        <div class="alerts"></div>
+      </div>
+
+      <div class="generate_password">
+        <a class="generatePassword" id="care_password" href="#">Generate Password?</a>
+        <span><strong>Registered?</strong> <a id="forgot_password" href="./login.html"> Sign in!</a></span>
+      </div>
+      
+      <button type="submit" class="btn">SUBMIT</button>
+    </form>
+  </section>
+
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>

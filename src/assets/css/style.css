@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --background-secondary: #D8DEE9;
+  --background-primary: #23242a;
+  --primary-font: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* display: flex; */
+  background: var(--background-primary);
+  font-family: var(--primary-font);
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.container {
+  max-width: 600px;
+  min-width: 400px;
+  margin: auto;
+  background: var(--background-secondary);
+  padding: 20px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 24px rgba(0, 0, 0, .8);
+}
+form, .div_btn_login{
+  width: 90%;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  color: var(--background-primary);
+}
+
+label{
+  font-size: .6em;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+input{
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  line-height: 1.2em;
+  background-color: #fff;
+  color: black;
+  padding: 2px 5px;
+  font-size: .9em;
+  transition: box-shadow .5s;
+}
+
+input:focus{
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, .8);
+  transition: box-shadow .5s;
+}
+
+.icon_eye{
+  position: relative;
+  left: 92%;
+  bottom: 30px;
+  cursor: pointer;
+  width: 30px;
+}
+
+.icon{
+  position: absolute;
+  font-size: .7em;
+  color: #b6bbc4;
+}
+
+.generate_password,
+.forgot_password {
+  font-size: .6em;
+  margin-top: 0px;
+  margin-bottom: -5px;
+}
+
+.generate_password a,
+.forgot_password a {
+  text-decoration: none;
+  text-transform: none;
+  color: #434C5E;
+  display: inline-block;
+}
+
+.generate_password a:hover,
+.forgot_password a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn{
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: var(--background-primary);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--background-secondary);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-align: center;
+  transition: .5s;
+  font-size: .7em;
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: #434C5E;
+  outline: 1px solid #23242a;
+  transition: .5s;
+}
+
+/*  ALERTAS  */
+
+.alerts{
+  font-size: .4em;
+  color: red;
+  margin: 0px;
+  display: block;
+}
+
+.alerts p {
+  margin: 0px;
+  padding: 0px;
+  line-height: 1em;
+}
